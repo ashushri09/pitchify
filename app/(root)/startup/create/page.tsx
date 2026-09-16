@@ -1,6 +1,5 @@
-import StartupForm from "@/app/components/StartupForm";
+import StartupForm from "@/components/StartupForm";
 import { auth } from "@/auth";
-
 import { redirect } from "next/navigation";
 
 const Page = async () => {

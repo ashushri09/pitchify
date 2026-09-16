@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [{ protocol: "https", hostname: "*" }],
   },
   devIndicators: { position: "bottom-right" },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

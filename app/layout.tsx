@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-// @ts-expect-error Next.js loads this stylesheet at runtime.
 import "./globals.css";
 
 import { Inter } from "next/font/google";

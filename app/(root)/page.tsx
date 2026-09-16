@@ -20,10 +20,8 @@ export default async function Home({
           Pitch your startup, Connect with Entrepreneurs
         </h1>
         <p className="sub-heading !max-w-3xl">
-          Submit Ideas, Vote on Pitchesm and Get Noticed in Virtual
-          Competitions.
+          Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competitions.
         </p>
-
         <SearchForm query={query} />
       </section>
 
@@ -31,14 +29,13 @@ export default async function Home({
         <p className="text-30-semibold">
           {query ? `Search results for ${query} startups` : "Search Startups"}
         </p>
-
         <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
-            posts.map((post: StartupCartType) => (
+            posts.map((post: StartupTypeCard) => (
               <StartupCard key={post?._id} post={post} />
             ))
           ) : (
-            <p className="no-results">No Startups found</p>
+            <p className="no-result">No Startups found</p>
           )}
         </ul>
       </section>
